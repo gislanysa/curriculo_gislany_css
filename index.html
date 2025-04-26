@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Curriculo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#formacao">Formação</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#formulario">Fale comigo</a>
+            <a href="#endereco">Endereço</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <img src="assets/perfil.png" alt="Foto de perfil" class="foto-perfil">
+            <h1>Gislany Araujo</h1>
+            <h2>Analista de Sistemas</h2>
+            <p>
+                Sou brasileira, da terra dos altos coqueiros, apaixonada por viagens, aventuras e tecnologia.
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas pela Faculdade Senac de Pernambuco, com formação prevista para 2026.
+                Tenho foco em desenvolvimento full-stack e UI/UX Design.
+            </p>
+            <p>
+                Fora do mundo digital sou entusiasta de trekking e viagens, atividades que me ensinam a enxergar perspectivas diferentes, me adaptar a novos cenários e manter a calma diante dos desafios.
+                Estou sempre aberta a novos desafios e aprendizado contínuo.
+            </p>
+
+            <div class="redes-contatos">
+                <a href="https://wa.me/+5581974008190" target="_blank"> <img src="assets/whatsa.png" alt="logo whatsapp" title="Logo whatsapp" class="icone-contato" height="32px"></a>
+                <a href="mailto:gislany.sa@gmail.com" target="_blank"> <img src="assets/email.png" alt="imagem envelope" title="envelope" class="icone-contato" height="33px"></a>
+                <a href="https://github.com/gislanysa" target="_blank"> <img src="assets/git.png" alt="logo github" title="Logo github" class="icone-rede" height="38px"></a>
+                <a href="https://linkedin.com/in/gislany-araujo-dev" target="_blank"> <img src="assets/linkedin.png" alt="logo likedin" title="Logo linkedin" class="icone-rede" height="33px"></a>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>
+                    <strong>Análise e Desenvolvimento de Sistemas</strong><br>
+                    Universidade: Senac<br>
+                    Período: 2024 - 2026<br>
+                    Descrição: Tecnólogo em Análise e Desenvolvimento de Sistemas
+                </li>
+            </ul>
+        </section>
+
+        <section id="experiencia" class="mb-5">
+            <h2>Experiência Profissional</h2>
+            <table class="table table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Cargo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Telus International</td>
+                        <td>Internet Assessor</td>
+                        <td>Trabalho aperfeiçoando o mecanismo de busca do Google para usuários brasileiros. Aprimoro o conhecimento na língua inglesa e tecnologias de avaliação de conteúdo online, contribuindo para o treinamento de inteligências artificiais com flexibilidade de horários.</td>
+                    </tr>
+                    <tr>
+                        <td>Hospital Agamenon Magalhães</td>
+                        <td>Técnico de laboratório</td>
+                        <td>Auxiliei na realização de exames laboratoriais, manipulação de amostras e registro em sistemas hospitalares. Desenvolvi habilidades em organização, precisão, trabalho sob pressão e cumprimento de normas técnicas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cursos">
+            <h2>Cursos Complementares</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Rocketseat</h3>
+                    <p>full-stack<br>React</p>
+                </div>
+                <div class="card">
+                    <h3>Alura</h3>
+                    <p>HTML e CSS<br>JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>TIC em trilhas</h3>
+                    <p>Psicologia aplicada a UX</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario" class="mb-5">
+            <h2>Fala Comigo</h2>
+            <form class="border p-4 rounded bg-light">
+                <fieldset>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">Sobrenome</label>
+                            <input type="text" id="sobrenome" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(99) 99999-9999" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lingua">Língua aplicada</label>
+                        <select id="lingua" class="form-select">
+                            <option>Português (pt-br)</option>
+                            <option>Inglês</option>
+                            <option>Espanhol</option>
+                            <option>Francês</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="arquivo">Upload de protótipo (PDF, DOC, DOCX, JPEG ou PNG)</label>
+                        <input type="file" id="arquivo" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png">
+                    </div>
+                    <div class="mb-3">
+                        <label>Linguagens preferidas</label>
+                        <select multiple class="form-select">
+                            <option>JavaScript</option>
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>PHP</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label>Banco de dados recomendado</label><br>
+                        <input type="radio" name="bd" value="MySQL"> MySQL
+                        <input type="radio" name="bd" value="PostgreSQL"> PostgreSQL
+                        <input type="radio" name="bd" value="MongoDB"> MongoDB
+                    </div>
+                    <div class="mb-3">
+                        <label for="turno">Turno de preferência para reuniões</label>
+                        <select id="turno" class="form-select">
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="horario">Melhor horário sugerido</label>
+                        <input type="time" id="horario" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data">Previsão de entrega desejada</label>
+                        <input type="date" id="data" class="form-control">
+                    </div>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="endereco" class="mb-5">
+            <h2>Endereço</h2>
+            <iframe class="w-100" height="450" style="border:0;" allowfullscreen loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.3390072375905!2d-34.90784428955114!3d-8.062880097265149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18d869e7548d%3A0xc9e915120c2bd6ea!2sR.%20Abd%C3%ADsio%20Veiga%20-%20Ilha%20do%20Retiro%2C%20Recife%20-%20PE%2C%2050720-725!5e0!3m2!1spt-PT!2sbr!4v1743599150755!5m2!1spt-PT!2sbr">
+            </iframe>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2025 Gislany Araujo. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>
